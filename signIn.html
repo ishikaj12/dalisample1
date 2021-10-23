@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.module.css">
+
+    <title>TONEDx</title>
+</head>
+<body>
+    <div class="form">
+  <div class="tab-header">
+    <!-- sign up tab portion of box-->
+    <div class="active">Sign Up</div>
+
+    <!-- sign in tab portion of box-->
+    <div>Sign In</div>
+  </div>
+  <div class="tab-content">
+    <div class="tab-body active">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="user-input-wrp2">
+            <!-- fill in boxes for entering name when signing up-->
+            <br/>
+            <input type="text" class="inputText" required/>
+            <span class="floating-label">First Name</span>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="user-input-wrp2">
+            <br/>
+            <input type="text" class="inputText" required/>
+            <span class="floating-label">Last Name</span>
+          </div>
+        </div>
+      </div>
+      <br/>
+      <hr>
+      <!-- fill in boxes for email, username, and password when signing up-->
+      <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" required/>
+        <span class="floating-label">Email Address</span>
+      </div>
+      <div class="user-input-wrp">
+        <br/>
+        <input type="text" class="inputText" required/>
+        <span class="floating-label">Username</span>
+      </div>
+      <div class="user-input-wrp">
+        <br/>
+        <input type="password" class="inputText" required/> 
+        <span class="floating-label">Password</span>
+      </div>
+      <!-- submit button-->
+      <div class="form-element" button id="btnLogin">
+        <button>Submit →</button>
+      </div>
+    </div>
+    
+    <!-- inactive by default sign in section before it gets clicked on-->
+    <div class="tab-body">
+      <div class="user-input-wrp">
+        <!-- boxes to fill in for email and password when signing in-->
+        <br/>
+        <input type="text" class="inputText" required/>
+        <span class="floating-label"> Email / Username</span>
+      </div>
+      <div class="user-input-wrp">
+        <br/>
+        <input type="password" class="inputText" required/> 
+        <span class="floating-label">Password</span>
+      </div>
+      <div class="form-element">
+        <!-- checkbox to remember user's account when they sign in-->
+        <input type="checkbox" id="remember_me">
+        <label for="remember_me">Remember me for next session</label>
+      </div>
+      <!-- submit button-->
+      <div class="form-element2">
+        <button>Submit →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="signUp.js"></script>
+</body>
+</html>

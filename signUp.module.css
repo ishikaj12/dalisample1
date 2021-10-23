@@ -1,0 +1,192 @@
+* {
+    box-sizing:border-box;
+  }
+  body {
+    background-image: url("https://i.imgur.com/LplVtZc.png");
+    /* https://i.imgur.com/Tl6IFBi.png */
+    background-size: 1380px 768px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  /* controls placement of the box */
+  .form {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    height:450px;
+    background:#FCF7F5;
+    border-radius: 4px;
+  }
+  .form .tab-header {
+    height:50px;
+    line-height:50px;
+  }
+
+  /* color of tab header when not active */
+  .form .tab-header > div {
+    width:50%;
+    float:left;
+    text-align:center;
+    background:#f7efec;
+    color:#5A4743;
+    border-bottom: 2px solid #CFC2BE;
+    cursor:pointer;
+  }
+
+  /* color of tab header when active */
+  .form .tab-header > div.active {
+    background:#e6d6ce;
+    color:#5A4743;
+    border-bottom: 2px solid #79605A;
+  }
+  .form .tab-content {
+    padding:20px;
+  }
+  .form .tab-content .form-element {
+    margin:10px 0px;
+  }
+  
+  
+  /* checkbox for "remember me later" */
+  .form .tab-content .form-element input[type="checkbox"] {
+    width:30px;
+    margin:8px 0px;
+    margin-left:-5px;
+  }
+  .form .tab-content .form-element label {
+    color:#5A4743;
+    font-size: 16px;
+  }
+
+  /* submit button */
+  .form .tab-content .form-element button {
+    margin-top:25%;
+    margin-left: 30%;
+    width:40%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:#79605A;
+    color:#f5f5f5;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:5px;
+  }
+
+  /* submit button */
+  .form .tab-content .form-element2 button {
+    margin-top:55%;
+    margin-left: 30%;
+    width:40%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:#79605A;
+    color:#f5f5f5;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:5px;
+  }
+  .form .tab-content > div.active {
+    display:block;
+  }
+  .form .tab-content > div {
+    display:none;
+  }
+  .user-input-wrp {
+    position: relative;
+    width: 100%;
+    
+  }
+
+  .user-input-wrp .inputText{
+    width:100%;
+    padding:10px;
+    border:1px solid #aaa;
+    font-size:16px;
+    background:#ffffff;
+    border-radius:5px;
+    color: #563F39;
+    outline:none;
+     box-shadow: none !important;
+  }
+  
+  /* make the labels in the textbox float up when user begins typing */
+  .user-input-wrp .floating-label {
+    position: absolute;
+    pointer-events: none;
+    top: 30px;
+    left: 10px;
+    color: #CCB8B3;
+    transition: 0.2s ease all;
+  }
+
+  .user-input-wrp input:focus ~ .floating-label,
+  .user-input-wrp input:not(:focus):valid ~ .floating-label{
+    top: 24px;
+    left: 10px;
+    font-size: 8px;
+    opacity: 1;
+    color: #CCB8B3;
+  }
+
+  .user-input-wrp2 {
+    position: relative;
+    width: 100%;
+  }
+
+  .user-input-wrp2 .inputText{
+    width:130%;
+    padding:10px;
+    margin-left: 12px;
+    border:1px solid #aaa;
+    font-size:16px;
+    background:#ffffff;
+    border-radius:5px;
+    color: #563F39;
+    outline:none;
+     box-shadow: none !important;
+  }
+
+  /* make the labels in the textbox float up when user begins typing */
+  .user-input-wrp2 .floating-label {
+    position: absolute;
+    pointer-events: none;
+    top: 30px;
+    left: 23px;
+    color: #CCB8B3;
+    transition: 0.2s ease all;
+  }
+  .user-input-wrp2 input:focus ~ .floating-label,
+  .user-input-wrp2 input:not(:focus):valid ~ .floating-label{
+    top: 24px;
+    left: 20px;
+    font-size: 8px;
+    opacity: 1;
+    color: #CCB8B3;
+  }
+
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+  }
+
+  .col {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
